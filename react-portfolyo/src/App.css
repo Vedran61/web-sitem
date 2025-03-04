@@ -1,0 +1,307 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: black;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+/* ----------------------------------------------ME---------------------------------------------- */
+.me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+.me h1 {
+  font-size: 90px;
+  font-weight: 600;
+}
+.me h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.me h1 span, .me h2 span {
+  background: linear-gradient(0deg, #272727 10%, #807f7f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 20px;
+  color: #333;
+  text-decoration: none;
+}
+/* ----------------------------------------------HAKKIMDA---------------------------------------------- */
+.about-sections {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.6;
+}
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.about-skill p{
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.about-skill hr {
+  width: 60%;
+  height: 8px;
+  border: none;
+  background: #333;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+.about-skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+.about-h3-title{
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+/* HİZMETLERİM */
+.services-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.services-container {
+  font-size: 22px;
+  color: #333;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: bold;
+}
+.services-format h3 {
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: bold;
+}
+.services-readmore {
+  color: #333;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+.services-format:hover {
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+/* ----------------------------------------------İLETİŞİM---------------------------------------------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+.contact-form label {
+  font-size: 18px;
+  color: #333;
+  align-self: flex-start;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  resize: none;
+  background-color: #1f1f1f;
+  color: #ccc
+}
+.contact-submit {
+  border: none;
+  color: #ccc;
+  background: #1f1f1f;
+  font-size: 18px;
+  padding: 12px 40px;
+  cursor: pointer;
+}
+/* ----------------------------------------------FOOTER---------------------------------------------- */
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(109, 108, 108);
+}
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+/* ----------------------------------------------GENEL---------------------------------------------- */
+/* beyaz gölge - hover */
+.contact-submit:hover, .about-skill:hover hr, .about-skill:hover p, .contact-paragraf:hover, .logo:hover, .social-icons a:hover, .about-h3-title:hover, .about-paragraf:hover, .services-readmore:hover, .services-format p:hover, .services-format h2:hover, .services-format h3:hover, .contact-form label:hover, .contact-form input:hover, .contact-form textarea:hover, .contact-paragraf:hover, .nav-links a:hover{
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+/* genel yapı */
+.about, .contact, .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 60px 140px;
+  border-radius: 15px;
+}
+/* başlıklar */
+.about-title, .services-title, .contact-title{
+  position: relative;
+  text-align: center;
+}
+/* başlıklar h1*/
+.about-title h1, .services-title h1,.contact-title h1 {
+  margin-top: 150px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  border-bottom: 4px solid #333;
+  position: relative;
+}
+/* başlıklar - alt çizgi - beyaz gölge - hover */
+.contact-title h1:hover, .services-title h1:hover, .about-title h1:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  border-bottom: 4px solid #ffffff;
+}
+/* başlıklar - alt çizgi - beyaz gölge - hover:after */
+.about-title h1:hover::after, .services-title h1:hover::after, .contact-title h1:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  transition: box-shadow 0.3s ease;
+}
+/* başlıklar : after */
+.about-title h1::after, .services-title h1::after, .contact-title h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #333;
+}
+/* Paragraf */
+.about-paragraf, .contact-paragraf{
+  color: #252525;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
